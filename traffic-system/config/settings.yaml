@@ -1,0 +1,53 @@
+# Default application settings.
+# Environment variables in .env override matching fields at runtime.
+
+app:
+  name: Smart Traffic Light System
+  environment: development
+  log_level: INFO
+  log_dir: logs
+
+camera:
+  # 0 = default webcam; or a path like "data/sample_traffic.mp4"
+  source: 0
+  width: 1280
+  height: 720
+  fps_target: 15
+  frame_skip: 1
+
+detection:
+  model_name: yolov8n.pt
+  confidence: 0.40
+  # COCO class names used by YOLOv8
+  classes:
+    - car
+    - truck
+    - bus
+    - motorcycle
+    - person
+
+tracking:
+  count_interval_seconds: 5
+  # Lane / counting line coordinates are calibrated after camera mount
+  counting_line: null
+
+arduino:
+  port: COM3
+  baud_rate: 9600
+  reconnect_delay_seconds: 2.0
+  # Software-first: mock serial until hardware arrives
+  mock_enabled: true
+
+database:
+  uri: mongodb://localhost:27017
+  name: traffic_system
+
+aggregation:
+  window_seconds: 10
+
+ml:
+  model_path: models/congestion_model.joblib
+  prediction_interval_seconds: 60
+
+dashboard:
+  refresh_seconds: 5

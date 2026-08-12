@@ -1,0 +1,37 @@
+# Environment and secrets
+.env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Logs and runtime data
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML artifacts (keep folder, ignore large local dumps if needed)
+# models/*.pkl
+# models/*.joblib
+
+# YOLO downloads
+*.pt
+runs/

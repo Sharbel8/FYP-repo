@@ -1,0 +1,27 @@
+# Core (Step 1+)
+python-dotenv>=1.0.1,<2.0.0
+PyYAML>=6.0.2,<7.0.0
+pytest>=8.3.0,<10.0.0
+
+# Database (Step 2+)
+pymongo>=4.10.0,<5.0.0
+mongomock>=4.3.0,<5.0.0
+
+# Computer vision (Step 3+)
+opencv-python>=4.10.0,<5.0.0
+ultralytics>=8.3.0,<9.0.0
+
+# Data / ML (later steps)
+numpy>=2.1.0,<3.0.0
+pandas>=2.2.0,<3.0.0
+scikit-learn>=1.5.0,<2.0.0
+xgboost>=2.1.0,<3.0.0
+lightgbm>=4.5.0,<5.0.0
+joblib>=1.4.0,<2.0.0
+
+# Hardware serial (Arduino step)
+pyserial>=3.5,<4.0.0
+
+# Dashboard (later)
+streamlit>=1.39.0,<2.0.0
+plotly>=5.24.0,<6.0.0
