@@ -6,7 +6,7 @@ timing, MongoDB storage, ML congestion prediction, and a Streamlit dashboard.
 
 ## Current status
 
-**Step 3 complete:** camera capture (webcam / video file).
+**Steps 4–5 complete:** YOLO detection plus tracking and line-crossing counts.
 
 **Step 2 complete:** MongoDB connection, repositories, and indexes.
 
