@@ -37,6 +37,11 @@ arduino:
   reconnect_delay_seconds: 2.0
   # Software-first: mock serial until hardware arrives
   mock_enabled: true
+  publish_interval_seconds: 1.0
+  mock_phases:
+    RED: 30
+    YELLOW: 3
+    GREEN: 25
 
 database:
   uri: mongodb://localhost:27017
@@ -44,6 +49,7 @@ database:
 
 aggregation:
   window_seconds: 10
+  density_capacity: 20
 
 ml:
   model_path: models/congestion_model.joblib
