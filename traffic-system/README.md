@@ -6,7 +6,7 @@ timing, MongoDB storage, ML congestion prediction, and a Streamlit dashboard.
 
 ## Current status
 
-**Steps 6–7 complete:** mock Arduino signal timing + feature aggregation.
+**Steps 8–9 complete:** ML congestion prediction + read-only Streamlit dashboard.
 
 **Steps 4–5 complete:** YOLO detection plus tracking and line-crossing counts.
 
@@ -37,6 +37,14 @@ python scripts/smoke_step4.py          # YOLO detection
 python scripts/smoke_step5.py          # tracking / counting
 python scripts/smoke_step6.py          # mock Arduino → MongoDB
 python scripts/smoke_step7.py          # features → aggregates
+python scripts/smoke_step8.py          # aggregates → ML prediction (needs 8+ windows)
+python scripts/smoke_step9.py          # dashboard MongoDB read check
+```
+
+Run the dashboard with:
+
+```bash
+streamlit run dashboard/app.py
 ```
 
 ## Folder overview
